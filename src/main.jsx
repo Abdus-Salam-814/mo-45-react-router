@@ -13,6 +13,7 @@ import HomeBody from './component/HomeBody/HomeBody.jsx';
 import Contect from './component/Contect/Contect.jsx';
 import Login from './component/Login/Login.jsx';
 import MyInfo from './component/MyInfo/MyInfo.jsx';
+import Users from './component/Users/Users.jsx';
 
 
 const routers = createBrowserRouter([
@@ -42,6 +43,11 @@ const routers = createBrowserRouter([
         path: '/contect',
         element: <Contect></Contect>,
       
+      },
+      {
+        path: "/users",
+        loader: () => fetch('/data/users.json'),
+        element: <Users></Users>
       },
       {
         path:'/login',

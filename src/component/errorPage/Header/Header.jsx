@@ -6,6 +6,7 @@ const Header = () => {
             <Link className="hover:bg-amber-200 px-2" to={'/'} >Home</Link>
             <Link className="hover:bg-amber-200 px-2" to={'/about'} >About</Link>
             <Link className="hover:bg-amber-200 px-2" to={'/contect'} >Contect</Link>
+            <Link className="hover:bg-amber-200 px-2" to={'/users'} >User Data</Link>
             <Link className="hover:bg-amber-200 px-2" to={'/login'} >LogIn</Link>
           
           
