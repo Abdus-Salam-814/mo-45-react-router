@@ -9,6 +9,10 @@ import {
 import Home from './component/Home.jsx';
 import ErrorPage from './component/errorPage/ErrorPage.jsx';
 import About from './component/About/About.jsx';
+import HomeBody from './component/HomeBody/HomeBody.jsx';
+import Contect from './component/Contect/Contect.jsx';
+import Login from './component/Login/Login.jsx';
+import MyInfo from './component/MyInfo/MyInfo.jsx';
 
 
 const routers = createBrowserRouter([
@@ -18,8 +22,30 @@ const routers = createBrowserRouter([
     errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
+        path: "/",
+        element: <HomeBody></HomeBody>
+
+      },
+
+      {
         path: '/about',
-        element: <About></About>
+        element: <About></About>,
+        children:[
+          {
+            path: 'myInfo',
+            element: <MyInfo></MyInfo>
+          }
+        ]
+        
+      },
+      {
+        path: '/contect',
+        element: <Contect></Contect>,
+      
+      },
+      {
+        path:'/login',
+        element:<Login></Login>
       }
     ]
   }
