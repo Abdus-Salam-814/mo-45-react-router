@@ -1,0 +1,6 @@
+nav a.active{
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: slateblue;
+    color: white;
+}
